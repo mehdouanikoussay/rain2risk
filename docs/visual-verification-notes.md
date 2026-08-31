@@ -1,0 +1,3 @@
+# Visual verification notes
+
+The refreshed Rain2Risk interface was rendered locally from the running Python server and captured at 1440×1200 and 390×844. The desktop capture shows the branded header, hero copy, map toolbar, Leaflet world map, selected marker, analysis controls, and risk legend. The mobile capture shows the responsive stacked hero, compact brand header, map card, ready status, location prompt, and legend without visible clipping in the captured viewport. The screenshots are evidence that the frontend is served and renders; they do not claim that a live provider-backed analysis succeeded.
