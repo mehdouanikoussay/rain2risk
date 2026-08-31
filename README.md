@@ -105,12 +105,34 @@ Returns a small JSON health payload for checking that the server is running.
 
 The interface uses a focused Rain2Risk visual system: deep marine surfaces, aqua data accents, amber warnings, a compact brand mark, clear hierarchy, responsive cards, explicit loading and error states, and a persistent risk legend. The redesign keeps the existing Leaflet interaction and API contract while making the workflow easier to understand at a glance.
 
-A runtime proof package is documented in [`docs/OPERATIONS.md`](docs/OPERATIONS.md). It includes the exact endpoint checks, orchestration commands, architecture diagrams, and screenshots captured from the locally running server:
+A runtime proof package is documented in [`docs/OPERATIONS.md`](docs/OPERATIONS.md). It includes the exact endpoint checks, orchestration commands, architecture diagrams, and screenshots captured from the locally running server.
 
-- [`docs/screenshots/rain2risk-desktop.png`](docs/screenshots/rain2risk-desktop.png)
-- [`docs/screenshots/rain2risk-mobile.png`](docs/screenshots/rain2risk-mobile.png)
-- [`docs/architecture-clean.png`](docs/architecture-clean.png)
-- [`docs/analysis-workflow.png`](docs/analysis-workflow.png)
+### Live interface screenshots
+
+The refreshed interface is shown below in both desktop and mobile layouts.
+
+![Rain2Risk desktop interface](docs/screenshots/rain2risk-desktop.png)
+
+![Rain2Risk mobile interface](docs/screenshots/rain2risk-mobile.png)
+
+### Active architecture
+
+The diagram below shows the canonical frontend → API → provider layers → risk engine → GeoJSON flow.
+
+![Rain2Risk active architecture](docs/architecture-clean.png)
+
+### Analysis workflow
+
+This sequence diagram shows how a selected location moves through weather, terrain, land-cover, OpenStreetMap, risk scoring, and the final Leaflet visualization.
+
+![Rain2Risk analysis workflow](docs/analysis-workflow.png)
+
+Editable sources and detailed operational notes are available here:
+
+- [`docs/OPERATIONS.md`](docs/OPERATIONS.md)
+- [`docs/architecture-clean.mmd`](docs/architecture-clean.mmd)
+- [`docs/analysis-workflow.mmd`](docs/analysis-workflow.mmd)
+- [`docs/runtime-proof.json`](docs/runtime-proof.json)
 
 ## Testing
 
